@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile PDF Reflow Viewer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>PDF Viewer</h1>
+      <label for="file-input" class="file-label">
+        <input type="file" id="file-input" accept=".pdf" />
+        <span>Choose PDF</span>
+      </label>
+    </header>
+    <main>
+      <div id="loading" class="loading hidden">Loading PDF...</div>
+      <div id="error" class="error hidden"></div>
+      <div id="pdf-container"></div>
+    </main>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
+
